@@ -16,8 +16,11 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and my score
 
-#GIF#
+#IMAGES#<img width="1440" alt="Screen Shot 2021-06-28 at 2 09 29 pm" src="https://user-images.githubusercontent.com/84433857/124374565-b6587400-dcdf-11eb-9138-068355c655b6.png">
+![Uploading Screen Shot 2021-06-28 at 2.09.39 pm.png…]()
+![Uploading Screen Shot 2021-06-28 at 2.10.06 pm.png…]()
+![Uploading Screen Shot 2021-06-28 at 2.10.10 pm.png…]()
 
-<iframe src="https://giphy.com/embed/aN7VMAIBgnmLa6PUbU" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/aN7VMAIBgnmLa6PUbU">via GIPHY</a></p>
 
-Link to the quizz: 
+
+Link to the quizz: https://ellaferreira.github.io/Quizz-Bootcamp/
