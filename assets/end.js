@@ -1,11 +1,11 @@
 const username = document.querySelector("#username");
 const saveScore = document.querySelector("#saveScore");
-const finalScore = document.querySelector("finalScore");
+const finalScore = document.querySelector("#finalScore");
 const mostRecentScore = localStorage.getItem("mostRecentScore");
 
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 const MAX_HIGH_SCORES = 5;
-
+console.log(finalScore);
 finalScore.innerText = mostRecentScore;
 
 username.addEventListener("keyup", () => {
@@ -23,5 +23,5 @@ saveHighScore = (e) => {
   });
   highScores.splice(5);
   localStorage.setItem("highScores", JSON.stringify(highScores));
-  window.location.assign("Go Return");
+  window.location.href = "/high.html";
 };

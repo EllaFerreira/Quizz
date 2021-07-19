@@ -3,12 +3,14 @@ let choices = Array.from(document.getElementsByClassName("choice-text"));
 let progressText = document.getElementById("progressText");
 let scoreText = document.getElementById("score");
 let progressBarFull = document.getElementById("progressBarFull");
+const timer = document.getElementById("timer");
 
 let currentQuestion = {};
 let accepting = true;
 let score = 0;
 let questionCounter = 0;
 let available = [];
+let totalTime = 10;
 
 let questions = [
   {
@@ -54,8 +56,24 @@ startGame = () => {
   questionCounter = 0;
   score = 0;
   available = [...questions];
+  startTimer();
   getNewQuestion();
 };
+
+function startTimer() {
+  const intervalId = setInterval(() => {
+    // ?
+    // show the user time remaining
+    totalTime -= 1;
+    timer.textContent = totalTime;
+
+    if (totalTime <= 0) {
+      // display msg or try again, redirect to start page
+      clearInterval(intervalId);
+      window.location.href = "/";
+    }
+  }, 1000);
+}
 
 getNewQuestion = () => {
   if (available.length === 0 || questionCounter > MAX_QUESTIONS) {
